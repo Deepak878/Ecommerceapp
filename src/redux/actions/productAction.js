@@ -14,12 +14,12 @@ export const selectedProduct = (products) =>{
   }
 }
 
-// export const deleteProducts = (products) =>{
-//   return {
-//     type: ActionTypes.SET_PRODUCTS,
-//     payload:products,
-//   }
-// }
+export const removeSelectedProduct = () =>{
+  return {
+    type: ActionTypes.REMOVE_SELECTED_PRODUCTS,
+  }
+}
+
 export const cartProducts = (productId) =>{
   console.log("yahoo product id aaoyo", productId);
   return {
